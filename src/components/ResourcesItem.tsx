@@ -61,13 +61,10 @@ class ResourcesItem extends React.Component<Props, State>{
       /* eslint-disable */
       if (cordova.platformId === 'android') {
         var filetransfer = new FileTransfer();
-        console.log(cordova.file);
-
         filetransfer.download(
           cordova.file.applicationDirectory + `www/${file}`,
           encodeURI(cordova.file.dataDirectory + file),
           win => {
-            console.log('success', win);
             cordova.plugins.fileOpener2.open(win.toURL(), 'application/pdf');
           },
           fail => {
