@@ -91,7 +91,7 @@ export default class DashboardPage extends React.Component<Props, State>{
             <Link to="/resources"><img src={resourcesImage} style={{...smallImage,...smallImageRight}}/></Link>
           </div>
           <div style={{width:'80%',margin:'0 auto', maxWidth:fbIconSize, height:fbIconSize, paddingBottom:20}} className="clearfix">
-            <ExternalLink absolutePath="https://www.facebook.com/groups/usnavymsc/" target="_system"><img style={{maxWidth:fbIconSize, marginRight:'20%'}} src={fbImage}/></ExternalLink>
+            <ExternalLink absolutePath="https://www.facebook.com/490550607792688" target="_system"><img style={{maxWidth:fbIconSize, marginRight:'20%'}} src={fbImage}/></ExternalLink>
           </div>
         </div>
         <div style={askChiefWrapper}>
