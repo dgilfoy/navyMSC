@@ -72,6 +72,7 @@ class AppTitleBar extends React.Component<Props, State>{
         onClick={()=>this.goBack(this.props['history'])}/>
     );
   }
+  componentW
   render(){
     const {title} = this.props;
     return (
@@ -79,7 +80,8 @@ class AppTitleBar extends React.Component<Props, State>{
         <AppBar
           style={{position:'fixed'}}
           title={this.setTitle(title)}
-          iconElementLeft={this.backIcon()}/>
+          iconElementLeft={this.backIcon()}
+          onTitleTouchTap={()=>this.goBack(this.props['history'])}/>
       </div>
     );
   }
