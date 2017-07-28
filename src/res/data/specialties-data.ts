@@ -497,8 +497,8 @@ const data =[
     title:'Manpower Systems Analysis Management',
     content:`
       <p>Manpower and Personnel Analysts are Health Care Administrators who attain the requisite knowledge, skills, and abilities through formal education, training, or experience to lead Navy Medicine manpower, personnel, and human resources initiatives.</p>
-      <p><strong>“Manpower”</strong> refers to the billets required to perform a task or function. Manpower analysts determine the number of billets required, authorized, and available to operate, maintain, support, and provide training in meeting Navy Medicine's mission. Manpower requirements (Spaces) are based on the range of operations during peacetime, low intensity conflict, and wartime. </p>
-      <p><strong>“Personnel”</strong> refers to human capital management (Faces). Personnel factors are those human aptitudes (i.e. cognitive, physical, and sensory capabilities), knowledge, skills, abilities, and experience levels that are needed to properly perform job tasks. Personnel factors are used to develop the military occupational specialties and civilian job series.</p> 
+      <p><strong>"Manpower"</strong> refers to the billets required to perform a task or function. Manpower analysts determine the number of billets required, authorized, and available to operate, maintain, support, and provide training in meeting Navy Medicine's mission. Manpower requirements (Spaces) are based on the range of operations during peacetime, low intensity conflict, and wartime. </p>
+      <p><strong>"Personnel"</strong> refers to human capital management (Faces). Personnel factors are those human aptitudes (i.e. cognitive, physical, and sensory capabilities), knowledge, skills, abilities, and experience levels that are needed to properly perform job tasks. Personnel factors are used to develop the military occupational specialties and civilian job series.</p> 
       <p>Manpower Officers develop, analyze, and execute policies and strategic short-term and long-term plans to ensure that Navy Medicine is recruiting, training, utilizing, and retaining personnel in the most efficient and effective ways possible. As a result, Manpower Officers significantly contribute to operational readiness and value.</p> 
       <h4>HOW DO I JOIN THE MANPOWER AND PERSONNEL TEAM?</h4> 
       <p>There are three pathways to specialize in the Manpower and Personnel Community.<p>
@@ -700,7 +700,7 @@ const data =[
     content:`
       <h4>COMMUNITY OVERVIEW:</h4>
       <p>Patient Administration (PAD) is a subspecialty of Health Care Administration (HCA) in the Medical Service Corps. Patient Administrators serve at Military Treatment Facilities (MTF), aboard Navy Vessels, on deployable platforms such as Expeditionary Medical Facilities, in Joint Services environments, and at Headquarters commands. PAD is the only HCA subspecialty that directly interacts with patients and medical providers daily. They provide and coordinate a wide variety of administrative functions in support of essential DoD programs as they relate to health care operations, medical readiness and the care of Wounded, Ill and Injured Service Members. Often referred to as a cradle to grave business, PAD duties and responsibilities are essential in ensuring delivery of health care benefits, continuity of care, achieving a medically ready force, protection and safety of individual health information, and dignified and compassionate treatment from birth registration to decedent affairs. In PAD, every day is an adventure!</p> 
-      <h4>CORE VALUES:</h4> <p>“Compassion, Professionalism, Accountability and Leadership”</p> 
+      <h4>CORE VALUES:</h4> <p>"Compassion, Professionalism, Accountability and Leadership”</p> 
       <h4>SCOPE OF RESPONSIBILITY:</h4> 
       <h5>MEDICAL ADMINISTRATION</h5> 
       <ul>
