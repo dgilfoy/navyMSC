@@ -56,8 +56,38 @@ class ResourcesItem extends React.Component<Props, State>{
   constructor(props){
     super(props);
   }
+  getPDF(file){
+    if (__IS_CORDOVA_BUILD__) {
+      /* eslint-disable */
+      if (cordova.platformId === 'android') {
+        var filetransfer = new FileTransfer();
+        console.log(cordova.file);
+
+        filetransfer.download(
+          cordova.file.applicationDirectory + `www/${file}`,
+          encodeURI(cordova.file.dataDirectory + file),
+          win => {
+            console.log('success', win);
+            cordova.plugins.fileOpener2.open(win.toURL(), 'application/pdf');
+          },
+          fail => {
+            console.log('error',fail)
+          }
+        );
+      } else {
+        (window as any).cordova.InAppBrowser.open(file, '_blank', 'location=no');
+      }
+      /* eslint-disable */
+    } else {
+      (window as any).open(encodeURI(file), '_system');
+    }
+  }
   inAppLinkClick(url, props){
-      props.history.push(url);
+      if(url.includes('pdf')){
+        this.getPDF(url);  
+      }else{
+        props.history.push(url);
+      }
   }
   externalLink(resources){
     return (

@@ -37,3 +37,5 @@ declare module "*.json" {
     export default value;
 }
 declare const __IS_CORDOVA_BUILD__: boolean;
+declare const FileTransfer : any;
+declare const cordova : any;
