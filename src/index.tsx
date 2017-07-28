@@ -44,6 +44,7 @@ import { HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import App from './components/AppTheme';
 import fetchNews from './actions/news';
+import fetchVersion from './actions/version';
 
 import reducer from './reducers';
 
@@ -56,9 +57,12 @@ const thunkArgs = {
 const store = createStore(reducer,applyMiddleware(thunk.withExtraArgument(thunkArgs)));
 
 store.subscribe(() => {
-    //console.log(store.getState()); // list entire state of app
+    console.log(store.getState()); // list entire state of app
 });
 store.dispatch(fetchNews());
+if(__IS_CORDOVA_BUILD__){
+  store.dispatch(fetchVersion());
+}
 
 // creates the render for the app and passes the store into the Provider.
 const render = (Component: any) => {

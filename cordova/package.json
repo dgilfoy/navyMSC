@@ -14,6 +14,7 @@
         "cordova-ios": "^4.4.0",
         "cordova-open": "^1.0.12",
         "cordova-open-native-settings": "^1.4.1",
+        "cordova-plugin-app-version": "^0.1.9",
         "cordova-plugin-compat": "^1.1.0",
         "cordova-plugin-device": "^1.1.6",
         "cordova-plugin-fetch": "git+https://github.com/aporat/cordova-plugin-fetch.git",
@@ -44,7 +45,8 @@
             "cordova-plugin-file-opener2": {},
             "cordova-plugin-file-transfer": {},
             "cordova-plugin-file": {},
-            "cordova-open": {}
+            "cordova-open": {},
+            "cordova-plugin-app-version": {}
         },
         "platforms": [
             "android",

@@ -63,10 +63,20 @@ export interface Props {
 export interface State {}
 
 export default class DashboardPage extends React.Component<Props, State>{
+  componentWillMount(){
+    this.setState({version:this.props['version']});
+  }
   setMaxHeight(){
     let scrHeight = this.props.appPage.screen.height,
       multi = ( scrHeight > 700 ) ? .65 : .59;
     return ( scrHeight * multi );
+  }
+  setFBLink(){
+    if(__IS_CORDOVA_BUILD__){
+      return (cordova.platformId == 'android') ? 'https://www.facebook.com/groups/usnavymsc/' : 'https://www.facebook.com/490550607792688';
+    }else{
+      return 'https://www.facebook.com/groups/usnavymsc/';
+    }
   }
   render(){
     //@todo move all of my styles to a folder and do imports and/or use combines
@@ -74,6 +84,7 @@ export default class DashboardPage extends React.Component<Props, State>{
       minHeight: this.setMaxHeight()
     }
     const fbIconSize = (this.props.appPage.screen.height > 700 ) ? 90 : 78;
+    console.log(this.state);
     return (
       <div style={{position:'relative',backgroundColor: '#1b4583'}}>
        <AppLogoBar hasPaddingTop={false}/>
@@ -91,7 +102,7 @@ export default class DashboardPage extends React.Component<Props, State>{
             <Link to="/resources"><img src={resourcesImage} style={{...smallImage,...smallImageRight}}/></Link>
           </div>
           <div style={{width:'80%',margin:'0 auto', maxWidth:fbIconSize, height:fbIconSize, paddingBottom:20}} className="clearfix">
-            <ExternalLink absolutePath="https://www.facebook.com/490550607792688" target="_system"><img style={{maxWidth:fbIconSize, marginRight:'20%'}} src={fbImage}/></ExternalLink>
+            <ExternalLink absolutePath="https://www.facebook.com/groups/usnavymsc/" target="_system"><img style={{maxWidth:fbIconSize, marginRight:'20%'}} src={fbImage}/></ExternalLink>
           </div>
         </div>
         <div style={askChiefWrapper}>
@@ -99,7 +110,7 @@ export default class DashboardPage extends React.Component<Props, State>{
             <Link to="/ask-the-chief"><img src={chiefImg} style={{width:'100%'}} /></Link>
           </div>
         </div>
-        <div style={versionStyle}>version 1.0.2</div>
+        <div style={versionStyle}>{this.state['version']}</div>
       </div>
     )
   }

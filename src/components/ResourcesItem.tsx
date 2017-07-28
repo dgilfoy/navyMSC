@@ -63,7 +63,7 @@ class ResourcesItem extends React.Component<Props, State>{
         var filetransfer = new FileTransfer();
         filetransfer.download(
           cordova.file.applicationDirectory + `www/${file}`,
-          encodeURI(cordova.file.dataDirectory + file),
+          cordova.file.externalApplicationStorageDirectory + file,
           win => {
             cordova.plugins.fileOpener2.open(win.toURL(), 'application/pdf');
           },

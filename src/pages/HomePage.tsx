@@ -34,7 +34,7 @@
  */ 
 import * as React from 'react';
 import {AppPageInterface} from '../components/AppTheme';
-import DashboardPage from './DashboardPage';
+import DashboardPage from '../containers/DashboardPage';
 import SplashPage from './SplashPage';
 
 export interface Props {

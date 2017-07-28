@@ -1,9 +1,9 @@
 /**
- * @file dashboardStyles.ts
- * 
- * Name: dashboardStyles.ts
- * 
- * Inline Styles for the dashboard/Homepage.
+ * @file version.ts
+ * File in charge of setting up the actions necessary for pulling in the app version number
+ 
+ * Name: version.ts
+ * Purpose of this file is to provide various functionality for retrieving the data for the version number
  *
  * Modified by Daniel Gilfoy <daniel.gilfoy@tee2.org> on 7/25/2017.
  *
@@ -32,41 +32,27 @@
  * Government Agency Point of Contact for
  * Original Software: robert.a.kayl.civ@mail.mil
  */ 
+export const REQUEST_VERSION = 'REQUEST_VERSION'
+function requestVersion() {
+  return {
+    type: REQUEST_VERSION
+  }
+}
 
-export const versionStyle = {
-  textAlign : 'center',
-  width : '100%',
-  color : '#fff',
-  padding : '5px'
+export const RECEIVE_VERSION = 'RECEIVE_VERSION'
+function receiveVersion(version) {
+  return {
+    type: RECEIVE_VERSION,
+    version: version,
+    receivedAt: Date.now()
+  }
 }
-export const buttonRowSpacing = {
-  margin: '16px auto 16px auto',
-  padding: '16px auto 16px auto',
-  width : '80%',
-  maxWidth: 600
-}
-export const smallImage = {
-  width : '48%',
-  maxWidth : 244,
-  marginBottom: '20px'
-}
-export const smallImageLeft = {
-  float : 'left'
-}
-export const smallImageRight = {
-  float : 'right'
-}
-export const askChiefWrapper = {
-  width:'100%'
-}
-export const chiefImgWrapper = {
-  width : '100%',
-  backgroundColor: '#1E1C1D',
-  marginTop: 10
-}
-export const buttonsWrapper = {
-  backgroundColor: '#1b4583',
-  width : '100%',
-  float: 'left',
-  padding : '35px 0 0'
+
+export default function fetchVersion() {
+  return function (dispatch) {
+    dispatch(requestVersion());
+    return cordova.getAppVersion.getVersionNumber(function (version) {
+      dispatch(receiveVersion(version));
+    });
+  }
 }

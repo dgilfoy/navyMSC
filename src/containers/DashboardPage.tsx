@@ -1,9 +1,9 @@
 /**
- * @file dashboardStyles.ts
+ * @file DashboardPage.tsx
  * 
- * Name: dashboardStyles.ts
+ 
+ * Name: DashboardPage.tsx
  * 
- * Inline Styles for the dashboard/Homepage.
  *
  * Modified by Daniel Gilfoy <daniel.gilfoy@tee2.org> on 7/25/2017.
  *
@@ -32,41 +32,15 @@
  * Government Agency Point of Contact for
  * Original Software: robert.a.kayl.civ@mail.mil
  */ 
+import {connect} from 'react-redux';
+import DashboardPage from '../pages/DashboardPage';
 
-export const versionStyle = {
-  textAlign : 'center',
-  width : '100%',
-  color : '#fff',
-  padding : '5px'
+const stateToProps = (state,ownProps) => {
+  return {
+    version: state.version
+  }
 }
-export const buttonRowSpacing = {
-  margin: '16px auto 16px auto',
-  padding: '16px auto 16px auto',
-  width : '80%',
-  maxWidth: 600
+const dispatchToProps = (dispatch,ownProps) => {
+  return {}
 }
-export const smallImage = {
-  width : '48%',
-  maxWidth : 244,
-  marginBottom: '20px'
-}
-export const smallImageLeft = {
-  float : 'left'
-}
-export const smallImageRight = {
-  float : 'right'
-}
-export const askChiefWrapper = {
-  width:'100%'
-}
-export const chiefImgWrapper = {
-  width : '100%',
-  backgroundColor: '#1E1C1D',
-  marginTop: 10
-}
-export const buttonsWrapper = {
-  backgroundColor: '#1b4583',
-  width : '100%',
-  float: 'left',
-  padding : '35px 0 0'
-}
+export default connect(stateToProps,dispatchToProps)(DashboardPage);

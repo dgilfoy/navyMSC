@@ -34,7 +34,6 @@
  */ 
 import {defaultspecialty, defaultSpecialtyIds} from '../res/data/specialties';
 import {defaultDetailing, defaultDetailingIds} from '../res/data/detailing';
-//import {defaultNews, defaultNewsIds} from '../res/data/news';
 import {defaultPhotos, defaultPhotosIds} from '../res/data/photos';
 import {defaultResources, defaultResourcesIds} from '../res/data/resources';
 
@@ -43,6 +42,7 @@ import {
   SET_PAGE_TITLE
 } from '../actions';
 import { REQUEST_NEWS, RECEIVE_NEWS, SET_NEWS_IDS } from '../actions/news';
+import { REQUEST_VERSION, RECEIVE_VERSION } from '../actions/version';
 import {combineReducers} from 'redux';
 
 const specialties = (state = defaultspecialty, action) => {
@@ -87,6 +87,8 @@ const resources = (state = defaultResources, action) => {
 const resourcesIds = (state = defaultResourcesIds, action) => {
   return state;
 }
+const defaultVersion = '1.0.5';
+
 const defaultView = {
   screen: {
     width: 500,
@@ -95,6 +97,16 @@ const defaultView = {
   page: {
     title: 'Navy MSC'
   }
+}
+const version = (state = defaultVersion, action) => {
+  switch(action.type){
+    case REQUEST_VERSION:
+    break;
+    case RECEIVE_VERSION:
+    state = action.version;
+    break;
+  }
+  return state;
 }
 const view = (state = defaultView, action) => {
   switch (action.type) {
@@ -119,7 +131,8 @@ const reducer = combineReducers({
   photosIds,
   resources,
   resourcesIds,
-  view
+  view,
+  version
 });
 
 export default reducer;
