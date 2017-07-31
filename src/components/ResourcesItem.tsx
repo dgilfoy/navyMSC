@@ -64,11 +64,11 @@ class ResourcesItem extends React.Component<Props, State>{
         filetransfer.download(
           cordova.file.applicationDirectory + `www/${file}`,
           cordova.file.externalApplicationStorageDirectory + file,
-          win => {
-            cordova.plugins.fileOpener2.open(win.toURL(), 'application/pdf');
+          success => {
+            cordova.plugins.fileOpener2.open(success.toURL(), 'application/pdf');
           },
-          fail => {
-            console.log('error',fail)
+          error => {
+            console.log('error',error)
           }
         );
       } else {
