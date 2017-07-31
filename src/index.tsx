@@ -44,7 +44,6 @@ import { HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import App from './components/AppTheme';
 import fetchNews from './actions/news';
-import fetchVersion from './actions/version';
 
 import reducer from './reducers';
 
@@ -61,7 +60,8 @@ store.subscribe(() => {
 });
 store.dispatch(fetchNews());
 if(__IS_CORDOVA_BUILD__){
-  store.dispatch(fetchVersion());
+  // seems to have issues with ios, commenting out for now.
+  //store.dispatch(fetchVersion());
 }
 
 // creates the render for the app and passes the store into the Provider.
