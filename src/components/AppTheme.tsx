@@ -83,27 +83,36 @@ class App extends React.Component<Props, State>{
       screen: this.getScreenDimensions(),
     }
   }
-
+  /**
+   * 
+   * 
+   * @memberof App
+   */
   getAppPageObject = ():AppPageInterface => {
     return {
       screen: this.state.screen
     }
   }
 
-  componentWillMount(){
-  }
-
   componentDidMount(){
     this.handlePageResize();
   }
-
+  /**
+   * 
+   * 
+   * @memberof App
+   */
   getScreenDimensions = () => {
     return {
        width: window.innerWidth,
        height: window.innerHeight
     }
   }
-
+  /**
+   * 
+   * 
+   * @memberof App
+   */
   hasScreenChanged = () => {
     const {width, height} = this.state.screen;
     const currentDims = this.getScreenDimensions();
@@ -116,30 +125,35 @@ class App extends React.Component<Props, State>{
     }
     return false;
   }
-
+  /**
+   * 
+   * 
+   * @memberof App
+   */
   handlePageResize = () => {
     let resizeTimeoutId = null;
     window.onresize = () => {
-       if(resizeTimeoutId){
-         clearTimeout(resizeTimeoutId);
-       }
-
-       if(this.hasScreenChanged()){
-
-         resizeTimeoutId = setTimeout(
-                () => {
-                  
-                 this.setState({
-                   screen: this.getScreenDimensions()
-                 }); 
-                  
-                },
-              500);
-       }
-
-      
+      if(resizeTimeoutId){
+        clearTimeout(resizeTimeoutId);
+      }
+      if(this.hasScreenChanged()){
+        resizeTimeoutId = setTimeout(
+          () => {
+            
+            this.setState({
+              screen: this.getScreenDimensions()
+            }); 
+            
+          },
+        500);
+      }
     }
   }
+  /**
+   *  renders the componenent for the app
+   * 
+   * @memberof App
+   */
   renderRouteComponent = (Component) => {
 
     return () => {  
@@ -150,7 +164,12 @@ class App extends React.Component<Props, State>{
       );
     };
   }
-  
+  /**
+   * Routing for the app
+   * 
+   * @returns 
+   * @memberof App
+   */
   render(){
     return <MuiThemeProvider muiTheme={muiTheme}>
     <div>

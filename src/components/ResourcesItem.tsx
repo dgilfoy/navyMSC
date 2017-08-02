@@ -56,7 +56,13 @@ class ResourcesItem extends React.Component<Props, State>{
   constructor(props){
     super(props);
   }
-  getPDF(file){
+  /**
+   *  getPDF : void - opens a pdf - in the inAppBrowser for iOS, using FileOpener2 for external applications in android, and in another tab for the web.
+   * 
+   * @param {any} file 
+   * @memberof ResourcesItem
+   */
+  getPDF(file) : void {
     if (__IS_CORDOVA_BUILD__) {
       /* eslint-disable */
       if (cordova.platformId === 'android') {
@@ -79,25 +85,52 @@ class ResourcesItem extends React.Component<Props, State>{
       (window as any).open(encodeURI(file), '_system');
     }
   }
-  inAppLinkClick(url, props){
+  /**
+   *  inAppLinkClick - returns the pdf or pushes the history if the url contains pdf
+   * 
+   * @param {string} url 
+   * @param {Props} props 
+   * @memberof ResourcesItem
+   */
+  inAppLinkClick(url, props) : void {
       if(url.includes('pdf')){
         this.getPDF(url);  
       }else{
         props.history.push(url);
       }
   }
-  externalLink(resources){
+  /**
+   * externalLink - is an external link, returns a link of that component.
+   * 
+   * @param {ResourcesInterface} resources 
+   * @returns JSX.Element
+   * @memberof ResourcesItem
+   */
+  externalLink(resources: ResourcesInterface) : JSX.Element {
     return (
       <ExternalLink target="_system" absolutePath={resources.link}>
         <ListItem primaryText={resources.title} style={listStyle}/>  
       </ExternalLink>
     )
   }
-  listItem(resources){
+  /**
+   * listItem  - returns a listItem (materialUI element)
+   * 
+   * @param {any} resources 
+   * @returns JSX.Element
+   * @memberof ResourcesItem
+   */
+  listItem(resources) : JSX.Element {
     return (
       <ListItem primaryText={resources.title} style={listStyle} onTouchTap={()=>this.inAppLinkClick(resources.link,this.props)}/>  
     )
   }
+  /**
+   * Renders the Resource list item
+   * 
+   * @returns 
+   * @memberof ResourcesItem
+   */
   render(){
     const {resources} = this.props;
     const isExternal = resources.isExternal;

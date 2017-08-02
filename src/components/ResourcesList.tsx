@@ -41,17 +41,13 @@ export interface Props {
   resources: ResourcesInterface[];
 }
 
-export interface State {
-
-}
+export interface State {}
 
 export default class ResourcessList extends React.Component<Props, State>{
-
   constructor(props){
     super(props);
 
   }
-  
   render(){
     const {resources} = this.props;
     return (

@@ -49,6 +49,12 @@ export default class NewsList extends React.Component<Props, State>{
     super(props);
 
   }
+  /**
+   * 
+   * 
+   * @returns 
+   * @memberof NewsList
+   */
   error(){
     return (
       <div style={{padding:30, minHeight:300}}>

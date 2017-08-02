@@ -66,11 +66,23 @@ export default class DashboardPage extends React.Component<Props, State>{
   componentWillMount(){
     this.setState({version:this.props['version']});
   }
+  /**
+   * 
+   * 
+   * @returns 
+   * @memberof DashboardPage
+   */
   setMaxHeight(){
     let scrHeight = this.props.appPage.screen.height,
       multi = ( scrHeight > 700 ) ? .65 : .59;
     return ( scrHeight * multi );
   }
+  /**
+   * 
+   * 
+   * @returns 
+   * @memberof DashboardPage
+   */
   setFBLink(){
     if(__IS_CORDOVA_BUILD__){
       return (cordova.platformId == 'android') ? 'https://www.facebook.com/groups/usnavymsc/' : 'https://www.facebook.com/490550607792688';

@@ -50,7 +50,12 @@ class NewsItem extends React.Component<Props, State>{
   constructor(props){
     super(props);
   }
-  
+  /**
+   * 
+   * 
+   * @param {any} props 
+   * @memberof NewsItem
+   */
   openDetail( props ){
     props.history.push('/news-content/'+props.news.id);
   }

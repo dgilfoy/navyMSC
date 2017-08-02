@@ -53,6 +53,12 @@ class PhotosContentComponent extends React.Component<Props, State>{
     window.scrollTo(0,0);
     this.path = this.props['location'].pathname.split('/');
   }
+  /**
+   * 
+   * 
+   * @param {any} url 
+   * @memberof PhotosContentComponent
+   */
   learnMoreButtonClick(url){
     window.open(url,'_blank');
   }

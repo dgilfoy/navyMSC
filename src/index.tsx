@@ -56,7 +56,7 @@ const thunkArgs = {
 const store = createStore(reducer,applyMiddleware(thunk.withExtraArgument(thunkArgs)));
 
 store.subscribe(() => {
-    console.log(store.getState()); // list entire state of app
+   //console.log(store.getState()); // list entire state of app
 });
 store.dispatch(fetchNews());
 if(__IS_CORDOVA_BUILD__){
@@ -77,7 +77,7 @@ const render = (Component: any) => {
         document.getElementById("spaApp")
     );
 }
-// renders the app.
+// renders the app. If it's cordova, wait until the device is ready.
 if(__IS_CORDOVA_BUILD__){
   document.addEventListener("deviceready", function(){
     // document.addEventListener("menubutton", onMenuKeyDown, false);

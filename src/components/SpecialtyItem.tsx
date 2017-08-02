@@ -50,7 +50,12 @@ class SpecialtyItem extends React.Component<Props, State>{
   constructor(props){
     super(props);
   }
-
+  /**
+   * 
+   * 
+   * @param {any} props 
+   * @memberof SpecialtyItem
+   */
   openSpecialty( props ){
     props.history.push('/specialties-content/'+props.specialty.id);
   }

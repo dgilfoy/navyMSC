@@ -52,6 +52,13 @@ class SpecialtiesComponent extends React.Component<Props, State>{
     window.scrollTo(0,0);
     this.path = this.props['location'].pathname.split('/');
   }
+  /**
+   * 
+   * 
+   * @param {any} content 
+   * @returns 
+   * @memberof SpecialtiesComponent
+   */
   createContent(content){
     return {__html: content};
   }

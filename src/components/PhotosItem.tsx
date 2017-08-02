@@ -52,9 +52,22 @@ class PhotosItem extends React.Component<Props, State>{
   constructor(props){
     super(props);
   }
+  /**
+   * 
+   * 
+   * @param {any} photo 
+   * @returns 
+   * @memberof PhotosItem
+   */
   itemImage(photo){
     return <img style={{width:'100%'}} src={require('../res/images/around-the-world/' + photo.src)} />;
   }
+  /**
+   * 
+   * 
+   * @param {any} props 
+   * @memberof PhotosItem
+   */
   linkToPhotoContent(props){
     props.history.push('/around-the-globe-content/'+props.photos.id);
   }

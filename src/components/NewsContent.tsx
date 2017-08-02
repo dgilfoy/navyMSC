@@ -54,9 +54,22 @@ class NewsContentComponent extends React.Component<Props, State>{
   componentWillMount(){
     this.path = this.props['location'].pathname.split('/');
   }
+  /**
+   * 
+   * 
+   * @param {any} url 
+   * @memberof NewsContentComponent
+   */
   learnMoreButtonClick(url){
     window.open(url,'_blank');
   }
+  /**
+   * 
+   * 
+   * @param {any} content 
+   * @returns 
+   * @memberof NewsContentComponent
+   */
   createContent(content){
     return {__html: content};
   }

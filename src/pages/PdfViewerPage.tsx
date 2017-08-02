@@ -3,7 +3,7 @@
  * 
  * Name: PdfViewerPage.tsx
  * 
- * Page for displaying an embeded PDF - using the react-pdf plugin.
+ * Page for displaying an embeded PDF - using the react-pdf plugin. (deprecated)
  *
  * Modified by Daniel Gilfoy <daniel.gilfoy@tee2.org> on 7/25/2017.
  *
@@ -53,13 +53,29 @@ export interface State {
 class PdfViewerPage extends React.Component<Props, State>{
   private file: any;
   private title: any;
-  
+  /**
+   * 
+   * 
+   * @param {any} { total } 
+   * @memberof PdfViewerPage
+   */
   onDocumentLoad({ total }) {
     this.setState({totalPages:total}); // set total pages, once the document is loaded
   }
+  /**
+   * 
+   * 
+   * @param {any} { pageIndex, pageNumber } 
+   * @memberof PdfViewerPage
+   */
   onPageLoad({ pageIndex, pageNumber }) {
     this.setState({pageIndex,pageNumber}); // when page is loaded, set the new pageNumber/index
   }
+  /**
+   * 
+   * 
+   * @memberof PdfViewerPage
+   */
   componentWillMount(){
     // getting the pdf required from params, as well as setting the title
     let path = this.props['location'].pathname.split('/');
@@ -72,6 +88,11 @@ class PdfViewerPage extends React.Component<Props, State>{
       pageNumber : 0
     });
   }
+  /**
+   * 
+   * 
+   * @memberof PdfViewerPage
+   */
   incrementPage(){
     // logic to prevent navigating to a page that doesn't exist.
     if(this.state.pageIndex < this.state.totalPages ){
@@ -80,6 +101,11 @@ class PdfViewerPage extends React.Component<Props, State>{
       }));
     }
   }
+  /**
+   * 
+   * 
+   * @memberof PdfViewerPage
+   */
   decrementPage(){
     // logic to prevent navigating to a page that doesn't exist.
     if(this.state.pageIndex > 0){

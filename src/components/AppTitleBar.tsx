@@ -45,9 +45,22 @@ export interface State {
 }
 
 class AppTitleBar extends React.Component<Props, State>{
+  /**
+   * 
+   * 
+   * @param {any} history 
+   * @memberof AppTitleBar
+   */
   goBack(history){
     history.goBack();
   }
+  /**
+   * 
+   * 
+   * @param {any} title 
+   * @returns 
+   * @memberof AppTitleBar
+   */
   setTitle(title){
     return (
       <span>
@@ -56,6 +69,12 @@ class AppTitleBar extends React.Component<Props, State>{
       </span>
     );
   }
+  /**
+   * 
+   * 
+   * @returns 
+   * @memberof AppTitleBar
+   */
   backIcon(){
     const leftNavChevSVG = {
       color : '#fff',
@@ -72,7 +91,6 @@ class AppTitleBar extends React.Component<Props, State>{
         onClick={()=>this.goBack(this.props['history'])}/>
     );
   }
-  componentW
   render(){
     const {title} = this.props;
     return (
