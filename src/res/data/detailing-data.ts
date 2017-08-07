@@ -33,7 +33,7 @@
  * Original Software: robert.a.kayl.civ@mail.mil
  */ 
 const data =[
-  {id:1,name:'CDR Robert Anderson - Healthcare Admin',title:'',dept:'Medical Service Corps Detailers',area:'Health Care Administration (O1-O6',email:'robert.l.anderson@navy.mil'},
+  {id:1,name:'CDR Rona Green - Healthcare Admin',title:'',dept:'Medical Service Corps Detailers',area:'Health Care Administration (O1-O6',email:'rona.green@navy.mil'},
   {id:2,name:'CAPT Jody Dreyer - Healthcare Clinicians',title:'Head, Medical Service Corps Assignments',dept:'Medical Service Corps Detailers',area:'Health Care Clinicians & Med Tech',email:'jody.dreyer@navy.mil'},
   {id:3,name:'LCDR Charles Wilhite - Healthcare Scientists',title:'',dept:'Medical Service Corps Detailers',area:'Health Care Sciences & Physician Assistants',email:'charles.wilhite@navy.mil'},
   {id:4,name:'LCDR Erica Arnold',title:'',dept:'Nurse Corps Detailers',area:'O1-O2s, NCP, MECP, STA-21, NROTC, and Direct Accessions',email:'erica.arnold@navy.mil'},

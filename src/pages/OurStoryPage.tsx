@@ -55,7 +55,7 @@ export default class OurStoryPage extends React.Component<Props, State>{
             the Medical Service Corps is comprised of a multidisciplinary team of commissioned Naval Officers in clinical,
             scientific, and administrative health care fields.</p>
             <h2>A Brief History</h2>
-            <p>Originally called the Navy Hospital Corps in World War I, its vital role expanded during World War II – as the military recognized the need for a 
+            <p>Originally called the Navy Hospital Corps in World War I, its vital role expanded during World War II - as the military recognized the need for a 
               permanent, all-officer medical category comprised of individuals trained in administrative, professional, and scientific specialties.  
               The Medical Service Corps was officially authorized by the Army-Navy Medical Service Corps Act of 1947.
             </p>

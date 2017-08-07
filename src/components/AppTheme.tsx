@@ -126,7 +126,7 @@ class App extends React.Component<Props, State>{
     return false;
   }
   /**
-   * 
+   * sets the size of the screen
    * 
    * @memberof App
    */
