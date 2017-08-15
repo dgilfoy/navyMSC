@@ -44,7 +44,7 @@ import { HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import App from './components/AppTheme';
 import fetchNews from './actions/news';
-
+import fetchPhotos from './actions/photos';
 import reducer from './reducers';
 
 injectTapEventPlugin();
@@ -59,6 +59,7 @@ store.subscribe(() => {
    //console.log(store.getState()); // list entire state of app
 });
 store.dispatch(fetchNews());
+store.dispatch(fetchPhotos());
 if(__IS_CORDOVA_BUILD__){
   // seems to have issues with ios, commenting out for now.
   //store.dispatch(fetchVersion());

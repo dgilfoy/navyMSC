@@ -1,7 +1,6 @@
 /**
  * @file index.d.ts
  * 
- 
  * Name: index.d.ts
  * Definition module, ts related.
  *

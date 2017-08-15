@@ -54,6 +54,7 @@ export default class PhotosList extends React.Component<Props, State>{
   
   render(){
     const {photos} = this.props;
+    console.log(photos);
     return ( 
       <div style={{backgroundColor:"#fff", paddingTop:50}}>
         <List>

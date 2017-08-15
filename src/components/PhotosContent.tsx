@@ -47,7 +47,6 @@ class PhotosContentComponent extends React.Component<Props, State>{
   private path : any;
   constructor(props){
     super(props);
-
   }
   componentWillMount(){
     window.scrollTo(0,0);
@@ -62,6 +61,16 @@ class PhotosContentComponent extends React.Component<Props, State>{
   learnMoreButtonClick(url){
     window.open(url,'_blank');
   }
+  /**
+   * 
+   * 
+   * @param {any} content 
+   * @returns 
+   * @memberof NewsContentComponent
+   */
+  createContent(content){
+    return {__html: content};
+  }
   render(){
     const {photos} = this.props;
     const photosId = parseInt(this.path[2]);
@@ -69,9 +78,9 @@ class PhotosContentComponent extends React.Component<Props, State>{
       return photosItem.id === photosId;
     })[0];
     return ( 
-      <div>
-        <img style={{width:'100%', marginBottom:'-4px', paddingTop:50}} src={require('../res/images/around-the-world/' + photosContent.src)} />
-        <div style={{backgroundColor:"#fff",width:'100%',padding:'5px 0 10px 5px',minHeight:385, position:'relative'}}>
+      <div style={{width:'100%', margin:'0 auto 10px auto', paddingTop:60, maxWidth:600}}>
+        <img src={ 'http://www.navy.mil/management/photodb/webphoto/web_' + photosContent.src.substr(37)} />
+        <div style={{backgroundColor:"#fff",width:'98%',padding:'5px 0 10px 5px',minHeight:385, position:'relative'}}>
           {photosContent.content}
         </div>
       </div>

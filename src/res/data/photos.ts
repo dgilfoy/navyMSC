@@ -41,6 +41,7 @@ const ArraySchema = new schema.Array(Schema);
 export interface PhotosInterface{
   id: number;
   content: string;
+  title : any;
   src : string;
 }
 

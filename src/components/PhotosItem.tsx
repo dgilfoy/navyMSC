@@ -55,12 +55,30 @@ class PhotosItem extends React.Component<Props, State>{
   /**
    * 
    * 
+   * @param {any} content 
+   * @returns 
+   * @memberof NewsContentComponent
+   */
+  createContent(content){
+    return {__html: content};
+  }
+  /**
+   * 
+   * 
    * @param {any} photo 
    * @returns 
    * @memberof PhotosItem
    */
   itemImage(photo){
-    return <img style={{width:'100%'}} src={require('../res/images/around-the-world/' + photo.src)} />;
+    return ( 
+      <figure>
+        <img style={{width:'100%'}} src={'http://www.navy.mil/management/photodb/webphoto/web_' + photo.src.substr(37)} />
+        <figcaption
+          style={{width:'100%', textAlign:'center', paddingTop:10}}
+          dangerouslySetInnerHTML={this.createContent(photo.title)}>
+        </figcaption>
+      </figure>
+    );
   }
   /**
    * 
@@ -74,8 +92,7 @@ class PhotosItem extends React.Component<Props, State>{
   render(){
     const {photos} = this.props;
     const listStyle = {
-      margin: 10,
-      padding : "10px 5px"
+      padding : "10px 5px",maxWidth:'600px',margin:'0 auto'
     }
     return (
       <div style={listStyle}>

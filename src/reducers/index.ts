@@ -34,7 +34,6 @@
  */ 
 import {defaultspecialty, defaultSpecialtyIds} from '../res/data/specialties';
 import {defaultDetailing, defaultDetailingIds} from '../res/data/detailing';
-import {defaultPhotos, defaultPhotosIds} from '../res/data/photos';
 import {defaultResources, defaultResourcesIds} from '../res/data/resources';
 
 import {
@@ -42,6 +41,7 @@ import {
   SET_PAGE_TITLE
 } from '../actions';
 import { REQUEST_NEWS, RECEIVE_NEWS, SET_NEWS_IDS } from '../actions/news';
+import { REQUEST_PHOTOS, RECEIVE_PHOTOS, SET_PHOTOS_IDS } from '../actions/photos';
 import { REQUEST_VERSION, RECEIVE_VERSION } from '../actions/version';
 import {combineReducers} from 'redux';
 
@@ -75,10 +75,22 @@ const newsIds = (state = [], action) => {
   }
   return state;
 }
-const photos = (state = defaultPhotos, action) => {
+const photos = (state = [], action) => {
+  switch(action.type){
+    case REQUEST_PHOTOS:
+    break;
+    case RECEIVE_PHOTOS:
+    state = action.posts;
+    break;
+  }
   return state;
 }
-const photosIds = (state = defaultPhotosIds, action) => {
+const photosIds = (state = [], action) => {
+  switch(action.type){
+    case SET_PHOTOS_IDS:
+    state = action.ids;
+    break;
+  }
   return state;
 }
 const resources = (state = defaultResources, action) => {

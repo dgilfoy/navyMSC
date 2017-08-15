@@ -34,6 +34,7 @@
  */ 
 import {connect} from 'react-redux';
 import PhotosComponent from '../components/PhotosList';
+import fetchPhotos from '../actions/photos';
 
 const stateToProps = (state,ownProps) => {
   return {
@@ -42,7 +43,9 @@ const stateToProps = (state,ownProps) => {
 }
 const dispatchToProps = (dispatch,ownProps) => {
   return {
-    
+    fetchPhotos: () => {
+      dispatch( fetchPhotos() )
+    }  
   }
 }
 
