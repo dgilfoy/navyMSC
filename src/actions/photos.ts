@@ -67,6 +67,25 @@ function setPhotosIds(photosIds) {
     ids : photosIds
   }
 }
+
+const buildPhotosItems = (data,photosItems, currentPhotoID) => {
+  var oParser = new DOMParser();
+  var oDOM = oParser.parseFromString(data, "text/html");
+  var htmlItems = oDOM.getElementsByClassName('galleryPhoto');
+  Object.keys(htmlItems).map(function(iter){
+    if( htmlItems[iter].children !== undefined){
+        photosItems.push({
+        id : currentPhotoID,
+        title : htmlItems[iter].getElementsByClassName('hiddenCap')[0].innerHTML,
+        content : htmlItems[iter].getElementsByClassName('imgGall')[0].getAttribute('alt'),
+        src : htmlItems[iter].getElementsByClassName('imgGall')[0].src
+      });
+      currentPhotoID++;
+    }
+  });  
+  return photosItems;
+}
+
 // Meet our first thunk action creator!
 // Though its insides are different, you would use it just like any other action creator:
 // store.dispatch(fetchPosts('reactjs'))
@@ -91,26 +110,23 @@ export default function fetchPhotos() {
     return fetch('http://www.navy.mil/viewGallery.asp?id=161').then(function(resp){ return resp; }).then(function(response){
         // parse response
         return response.text().then(function(data){
-          var oParser = new DOMParser();
-          var oDOM = oParser.parseFromString(data, "text/html");
-          var htmlItems = oDOM.getElementsByClassName('galleryPhoto');
-          Object.keys(htmlItems).map(function(iter){
-            if( htmlItems[iter].children !== undefined){
-                photosItems.push({
-                id : parseInt(iter)+1,
-                title : htmlItems[iter].getElementsByClassName('hiddenCap')[0].innerHTML,
-                content : htmlItems[iter].getElementsByClassName('imgGall')[0].getAttribute('alt'),
-                src : htmlItems[iter].getElementsByClassName('imgGall')[0].src
-              });
-            }
-          });
-          let normalizedPhotos = normalize(photosItems, photosArraySchema),
-          defaultPhotos = normalizedPhotos.entities.photos,
-          defaultPhotosIds = normalizedPhotos.result;
-          dispatch(receivePhotos(defaultPhotos));
-          dispatch(setPhotosIds(defaultPhotosIds));
+          let firstPhotos = [];
+          photosItems = firstPhotos.concat(buildPhotosItems(data,photosItems,1));
           return this;
-        });
-    });
+        })
+    }).then(function(){
+          return fetch('http://www.navy.mil/viewGallery.asp?id=161&page=17&r=4').then(function(resp){return resp;}).then(function(response){
+            return response.text().then(function(data){
+              let secondPhotos = [];
+              photosItems = secondPhotos.concat(buildPhotosItems(data,photosItems,photosItems.length+1));
+              let normalizedPhotos = normalize(photosItems, photosArraySchema),
+              defaultPhotos = normalizedPhotos.entities.photos,
+              defaultPhotosIds = normalizedPhotos.result;
+              dispatch(receivePhotos(defaultPhotos));
+              dispatch(setPhotosIds(defaultPhotosIds));
+              return this;
+            })  
+          });
+        });;
   }
 }
