@@ -79,7 +79,7 @@ class PhotosContentComponent extends React.Component<Props, State>{
     })[0];
     return ( 
       <div style={{width:'100%', margin:'0 auto 10px auto', paddingTop:60, maxWidth:600}}>
-        <img src={ 'http://www.navy.mil/management/photodb/webphoto/web_' + photosContent.src.substr(37)} />
+        <img src={ 'http://www.navy.mil/management/photodb/webphoto/web_' + photosContent.src.substr(37).replace('/thumb_','')} />
         <div style={{backgroundColor:"#fff",width:'98%',padding:'5px 0 10px 5px',minHeight:385, position:'relative'}}>
           {photosContent.content}
         </div>

@@ -72,7 +72,7 @@ class PhotosItem extends React.Component<Props, State>{
   itemImage(photo){
     return ( 
       <figure>
-        <img style={{width:'100%'}} src={'http://www.navy.mil/management/photodb/webphoto/web_' + photo.src.substr(37)} />
+        <img style={{width:'100%'}} src={'http://www.navy.mil/management/photodb/webphoto/web_' + photo.src.substr(37).replace('/thumb_','')} />
         <figcaption
           style={{width:'100%', textAlign:'center', paddingTop:10}}
           dangerouslySetInnerHTML={this.createContent(photo.title)}>
