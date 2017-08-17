@@ -99,7 +99,7 @@ const resources = (state = defaultResources, action) => {
 const resourcesIds = (state = defaultResourcesIds, action) => {
   return state;
 }
-const defaultVersion = '1.0.5';
+const defaultVersion = '1.0.8';
 
 const defaultView = {
   screen: {
