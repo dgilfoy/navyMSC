@@ -45,6 +45,8 @@ export interface DetailingInterface{
   dept : string;
   area: string;
   email : string;
+  phone : string;
+  location : string;
 }
 
 export const normalizedDetailing = normalize(detailingData, detailingArraySchema);

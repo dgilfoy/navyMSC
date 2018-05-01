@@ -50,6 +50,12 @@ export default class OurStoryPage extends React.Component<Props, State>{
         <AppTitleBar title=""/>
         <AppLogoBar hasPaddingTop={true}/>
         <div style={{backgroundColor:"#fff",padding:'5px'}}>
+          <h2>Our Mission</h2>
+          <p>The Medical Service Corps actively supports the Navy and Marine Corps team and Navy Medicine's 
+            readiness and health benefits missions with a community of active duty and reserve component professionals.
+          </p>
+          <h2>Our Vision</h2>
+          <p>One Corps of many specialties meeting today's needs and tomorrow's challenges.</p>
           <h2 style={{padding:'10px 5px 5px',marginTop:0}}><u>The Medical Service Corps</u></h2>
           <p>The Medical Service Corps (MSC) is the most highly diversified Corps within Navy medicine. An integral part of the Navy, 
             the Medical Service Corps is comprised of a multidisciplinary team of commissioned Naval Officers in clinical,
@@ -71,13 +77,6 @@ export default class OurStoryPage extends React.Component<Props, State>{
               About 65 percent serve in facilities delivering direct patient care and 35 percent serve in operational units, training and research commands, 
               occupational and preventive medicine units, material and logistic support commands and headquarters commands.
             </p>
-            <h2>Our Mission</h2>
-            <p>The Medical Service Corps actively supports the Navy and Marine Corps team and Navy Medicine's 
-              readiness and health benefits missions with a community of active duty and reserve component professionals.
-            </p>
-            <h2>Our Vision</h2>
-            <p>One Corps of many specialties meeting today's needs and tomorrow's challenges.</p>
-
             <h2>Directors of the Medical Service Corps</h2>
             <ul style={{listStyle:'none',paddingLeft: '5px'}}>
               <li style={liItemStyle}>
@@ -149,7 +148,7 @@ export default class OurStoryPage extends React.Component<Props, State>{
                 2012-2015
               </li>
               <li style={liItemStyle}>
-                RDML Anne M. Swap<br/>
+                <a href="http://www.navy.mil/navydata/bios/bio.asp?bioID=897" target="_system">RDML Anne M. Swap</a><br/>
                 2015-Current
               </li>
             </ul>

@@ -40,7 +40,9 @@ const data =[
   {id:5,title:'Fitness & Health Living',link:'http://www.navyfitness.org/', isExternal:true},
   {id:6,title:'Suicide Prevention Lifeline',link:'https://suicidepreventionlifeline.org/', isExternal:true},
   {id:7,title:'DoN Freedom of Information',link:'http://www.secnav.navy.mil/foia/Pages/default.aspx', isExternal:true},
-  {id:8,title:'Ask the Corps Chief',link:'/ask-the-chief', isExternal:false}
+  {id:8,title:'Ask the Corps Chief',link:'/ask-the-chief', isExternal:false},
+  {id:9,title:'MSC MilSuite Site (CAC enabled)',link:'https://www.milsuite.mil/book/groups/navy-medical-service-corps', isExternal:true},
+  {id:10,title:'Navy Administrative Links',link:'http://www.navymentor.org/master-navy-links-list/', isExternal:true}
 ];
 
 export default data;

@@ -35,7 +35,9 @@
 import * as React from 'react';
 import {NewsInterface} from '../res/data/news';
 import NewsItem from './NewsItem';
+import {getPDF} from '../actions/_helper';
 import {List} from 'material-ui/List';
+import {ListItem} from 'material-ui/List';
 
 export interface Props {
   news: NewsInterface[];
@@ -67,6 +69,10 @@ export default class NewsList extends React.Component<Props, State>{
     return ( 
       <div style={{backgroundColor:"#fff", paddingTop:50}}>
         <List>
+          <ListItem primaryText={'The Rudder - March 2018 (PDF)'} 
+          style={{margin:'10px', border:'1px groove #FBF8F8', padding:"10px 5px"}}
+          onClick={() => getPDF(require('../res/files/The_Rudder_Mar18.pdf'))} 
+          />
           { (news.length < 1) ? this.error() : '' }
           {news.map(newsItem => {
             return <NewsItem key={newsItem.id} news={newsItem} />

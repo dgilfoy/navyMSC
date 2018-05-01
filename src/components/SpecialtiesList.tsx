@@ -56,6 +56,11 @@ export default class Specialties extends React.Component<Props, State>{
     const {specialties} = this.props;
     return ( 
       <div style={{backgroundColor:"#fff", paddingTop:50}}>
+        <div style={{marginTop:'15px',textAlign:'center'}}>
+          <a href="https://www.milsuite.mil/book/groups/navy-medical-service-corps" target="_system">
+            MSC Corps MilSuite Page Link (requires CAC login)
+          </a>
+        </div>
         <List>
           {specialties.map(specialty => {
             return <SpecialtyItem key={specialty.id} specialty={specialty} />

@@ -35,7 +35,7 @@
 const data =[
   {
     id:1,
-    title:'Aerospace and Operational Physiology',
+    title:'Aerospace and Operational Physiology (1836)',
     content:`
       <p>Navy Aerospace and Operational Physiologists train all U.S. Navy and Marine Corps Aircrew in the areas of aviation physiology, sensory physiology, 
       acceleration physiology, life support equipment, ejection/egress, parachute procedures and water survival. This training reduces the risk of mishaps 
@@ -74,11 +74,13 @@ const data =[
       <li>San Diego, California</li>
       <li>Annapolis, Maryland</li>
     </ul>
+    <h4>Specialty Leader</h4>
+    <p><a href="mailto:leslie.a.kindling.mil@mail.mil" target="_system">CDR Leslie Kindling</a></p>
     `
   },
   {
     id:2,
-    title:'Aerospace Experimental Psychology',
+    title:'Aerospace Experimental Psychology (1844)',
     content:`
       <p>Naval Aerospace Experimental Psychologists (AEPs) promote and ensure the safe and effective performance of Navy and Marine Corps personnel in aviation systems. 
       AEPs provide the Naval services with professional and technical guidance and assistance in the planning and conducting of research, development, test and 
@@ -113,11 +115,13 @@ const data =[
         <li>Patuxent River, Maryland</li>  
         <li>San Diego & Monterey, California</li>
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:jefferson.grubb@socom.mil" target="_system">CDR Jeff Grub</a></p>
     `
   },
   {
     id:3,
-    title:'Audiology',
+    title:'Audiology (1862)',
     content:`
       <p>Navy Audiologists provide a wide range of clinical support services in medical treatment facilities for a diverse population. At other sites they 
       also provide rehabilitative, non-medical support to conserve and improve communication ability. Navy Audiologists ensure the auditory combat 
@@ -151,11 +155,13 @@ const data =[
         <li>Pearl Harbor, Hawaii</li>
         <li>Rota, Spain</li> 
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:kirsten.e.veseyolah.mil@mail.mil" target="_system">LCDR Kirstin Veseyolah</a></p>
     `
   },
   {
     id:4,
-    title:'Biochemistry',
+    title:'Biochemistry (1810/11)',
     content:`
       <h4>Toxicology</h4> 
       <p>Forensic toxicologists manage and direct operations of military forensic laboratories. This work primarily involves identifying drugs of abuse in body fluids using state-of-the-art equipment. Forensic toxicologists also develop methods to identify compounds of interest, procedures to maintain a chain of custody, and present forensic evidence to lawyers, military judges and members of court-martial proceedings. Research toxicologists may study the effects of toxic substances on the normal life processes, test and develop protective equipment for military operations and evaluate exposure limits to chemical compounds. Toxicologists may have an opportunity to work in a forensic laboratory, Navy research laboratory or Environmental Preventive Medicine Unit, or they may teach at the Naval Academy and elsewhere. Biochemistry Research biochemists conduct and manage basic and applied research on biochemical problems of interest to the Navy. This may include designing studies, methods development, carrying out research studies and analysis of results. Research biochemists and toxicologists have the same job opportunities and work in many of the same locations.</p>
@@ -181,11 +187,13 @@ const data =[
         <li>Great Lakes, Illinois</li> 
         <li>Dayton, Ohio</li>
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:matthew.h.jamerson.mil@mail.mil" target="_system">CDR Matthew Jamerson</a></p>
     `
   },
   {
     id:5,
-    title:'Clinical Psychology',
+    title:'Clinical Psychology (1840)',
     content:`
       <p>There are approximately 140 Active Duty Clinical Psychologists in the Navy, working in military hospitals and clinics in the United States (i.e., California, Washington, D.C., Hawaii), overseas (Italy, Spain, Japan), aboard aircraft carriers, and with special operational units. Teaching opportunities are available at the Naval Academy and to supervise training at the Navy's APA-approved internship programs at San Diego, CA and Bethesda, MD.</p>
       <h4>Basic Requirements</h4>
@@ -214,11 +222,13 @@ const data =[
         <li>Okinawa and Sasebo, Japan</li> 
         <li>Naples and Sigonella, Italy</li> 
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:Carrie.h.kennedy.mil@mail.mil" target="_system">CAPT Carrie Kennedy</a></p>
     `
   },
   {
     id:6,
-    title:'Clinical Psychology - Doctoral Student Programs (USUHS)',
+    title:'Clinical Psychology - Doctoral Student Programs (USUHS) (1841)',
     content:`
       <p>The USUHS Clinical Psychology Ph.D program includes a strong base in the foundations of psychology with specialty training in military clinical, health, and organizational psychology. The students in the program are primarily trained as a broad based clinical psychologist with an appreciation and understanding of the unique aspects of military and public health.</p> 
       <h4>Basic Requirements</h4> 
@@ -239,11 +249,13 @@ const data =[
       </ul>
       <h4>Typical Assignment</h4> 
       <ul><li>Bethesda, Maryland</li></ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:Carrie.h.kennedy.mil@mail.mil" target="_system">CAPT Carrie Kennedy</a></p>
     `
   },
   {
     id:7,
-    title:'Clinical Psychology - Internship Program',
+    title:'Clinical Psychology - Internship Program (1842)',
     content:`
       <p>The Navy psychology pre-doctoral internships are organized around a Practitioner-Scholar model. All internship programs consist of a twelve month period of academic and clinical training in a military setting designed to meet two broad goals: The first goal is to provide the trainee with the experiences and skills necessary to meet the general requirements endorsed by the American Psychological Association. The second goal is to equip the trainee with specific skills needed to practice within the military health care system.</p> 
       <h4>Basic Requirements</h4>
@@ -270,11 +282,13 @@ const data =[
         <li>San Diego, California</li> 
         <li>Portsmouth, Virginia</li>
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:Carrie.h.kennedy.mil@mail.mil" target="_system">CAPT Carrie Kennedy</a></p>
     `
   },
   {
     id:8,
-    title:'Clinical Psychology - Post Doctoral Fellowship Program',
+    title:'Clinical Psychology - Post Doctoral Fellowship Program (1843)',
     content:`
       <p>The Navy's post doctoral fellowship in clinical psychology is organized around a Practitioner-Scholar model and provides an intensive, twelve-month, full-time, in-service period of clinical, didactic, and leadership experiences.</p> 
       <h4>Basic Requirements</h4>
@@ -292,11 +306,13 @@ const data =[
        </ul>
       <h4>Typical Assignment</h4> 
       <ul><li>Portsmouth, Virginia</li></ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:Carrie.h.kennedy.mil@mail.mil" target="_system">CAPT Carrie Kennedy</a></p>
     `
   },
   {
     id:9,
-    title:'Dietetics/Food Management',
+    title:'Dietetics/Food Management (1876/77)',
     content:`
       <p>There are approximately 30 Active Duty Navy Dieticians. Almost all duty stations for Navy dietitians are in hospitals. Dietitians are involved with patient Medical Nutrition therapy, outpatient nutrition counseling and food service operations. In addition to hospital dietetic responsibilities, they are involved in general nutrition education and wellness programs for service members and their families. Navy dietitians have opportunities to participate in field and shipboard patient care and food service operations when they are assigned to a deployable platform.</p>
       <h4>Basic Requirements</h4>
@@ -322,6 +338,8 @@ const data =[
         <li>Yokosuka, Japan</li> 
         <li>Naples and Sigonella, Italy</li>
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:kelly.e.mokay.mil@mail.mil" target="_system">CDR Kelly Mokay</a></p>
     `
   },
   {
@@ -342,7 +360,7 @@ const data =[
   },
   {
     id:11,
-    title:'Entomolgy',
+    title:'Entomolgy (1850)',
     content:`
       <p>Navy Entomologists perform a wide range of interesting and exciting duties, primarily focused toward preventing vector-borne diseases in the operational forces of the Navy and Marine Corps. Military medical entomologists plan, direct and participate in operational, consultative, training, quarantine and research programs for the prevention and control of arthropod pests and vectors of disease.</p> 
       <h4>Basic Requirements</h4>
@@ -367,11 +385,13 @@ const data =[
         <li>Lima, Peru </li> 
         <li>Cairo, Egypt</li> 
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:kathryn.a.barnes4.mil@mail.mil" target="_system">CDR CDR Kathryn Barnes</a></p>
     `
   },
   {
     id:12,
-    title:'Environmental Health',
+    title:'Environmental Health (1860)',
     content:`
       <p>Environmental Health Officers (EHOs) focus on prevention and control of diseases in Navy and Marine Corps active duty and civilian populations - identifying potential health threats, developing courses of action and advising commands of risks and countermeasures to protect our forces. EHOs are trained to determine effective methods of health-threat assessment, conduct disease and environmental surveillance, and develop countermeasures to meet potential and actual threats.</p> 
       <h4>Basic Requirements</h4>
@@ -398,11 +418,13 @@ const data =[
         <li>Naples and Sigonella, Italy </li> 
         <li>Rota, Spain</li> 
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:karen.corson@eu.navy.mil" target="_system">CDR Karen Corson</a></p>
     `
   },
   {
     id:13,
-    title:'Health Care Administration',
+    title:'Health Care Administration (1803)',
     content:`
       <p>Health Care Administrators (HCAs) take administrative and leadership roles in various medical and dental treatment facilities, and other naval enterprises worldwide. HCAs may also work in subspecialty vocations such as, Patient Administration, Medical Logistics, Medical Data Services, Medical Construction Liaison, Plans Operations Medical Intelligence, Manpower and Personnel Management, Financial Management, Education and Training, Operations Research and Information Systems Management.</p> 
       
@@ -423,11 +445,13 @@ const data =[
         <li>Okinawa and Yokosuka, Japan </li> 
         <li>Naples and Sigonella, Italy</li> 
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:donna.m.poulin.mil@mail.mil" target="_system">CDR Donna Poulin</a></p>
     `
   },
   {
     id:14,
-    title:'Health Services Collegiate Program (HSCP)',
+    title:'Health Services Collegiate Program (HSCP) (6201)',
     content:`
       <p>HSCP is designed to provide financial incentive for college students in the health care allied professions to complete Master's or Doctoral degree requirements and obtain a commission in the Medical Service Corps. Eligible specialties in the Medical Service Corps are: Healthcare Administration, Environmental Health, Industrial Hygiene, Audiology (Residency), Social Work (Internship), Pharmacy, Occupational Therapy, Podiatric Residency, Entomology, and Physician Assistant.</p> 
       <h4>Basic Requirements</h4>
@@ -445,11 +469,13 @@ const data =[
       <ul> 
         <li> Attend a school of your choosing; the school must be an accredited college, university, or school of study for a designated health profession. On-line/distant learning degree programs do not meet this requirement.</li> 
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:donna.m.poulin.mil@mail.mil" target="_system">CDR Donna Poulin</a></p>
     `
   },
   {
     id:15,
-    title:'Health Care Information Systems Administration',
+    title:'Health Care Information Systems Administration (6209)',
     content:`
       <p>Who we are: Navy Health Care Information Systems Officers provide leadership, managerial expertise and technical guidance in acquiring, developing, implementing, and maintaining clinical and business information systems. Though recruited as a Health Care Administrator, each Medical Service Corps (MSC) Officer was inspired to join the Health Care Information Systems community because of their desire to apply innovative thinking, engage in common interest of patient care through delivery of technology, and to be influential in joint service and Navy Executive Medicine as both a senior and junior officer. The Health Care Information Systems community touches every aspect of healthcare that is critical to the mission of technology solution delivery and provides the critical innovative thinking driving the path forward in healthcare delivery. The Health Care Information Systems Officer is actively engaged in every aspect of healthcare and is shaped for influential leadership roles where innovative thinking drives strategic planning and sustainment. Where we serve: The Health Care Information Systems Officers perform in broad and diverse roles, such as Department Heads, Program Managers, and in staff positions including OSD Health Affairs, Defense Health Agency, SPAWAR, and BUMED. They also support operational combat support, humanitarian assistance and disaster relief missions in support of Combatant Commanders, NATO, USAID, State department and others.</p> 
       <h4>Basic Requirements:</h4>
@@ -460,11 +486,13 @@ const data =[
         <li>Annual IM/IT Fellowship Opportunities </li> 
         <li>Health Care Informatics Program Graduate Certificate through University of San Diego</li> 
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:donna.m.poulin.mil@mail.mil" target="_system">CDR Donna Poulin</a></p>
     `
   },
   {
     id:16,
-    title:'Industrial Hygiene',
+    title:'Industrial Hygiene (1861)',
     content:`
       <p>Industrial Hygiene Officers (IHOs) focus on protecting people, installations and equipment by managing risk within working, living and operating environments to preserve mission capability. The IHO is responsible for professional direction of a broad and rapidly expanding array of environmental and occupational control programs. These include hazardous material assessment and disposal; biohazards; safety; respiratory and personal protection equipment; ergonomic hazards; and detection, assessment and monitoring of chemical and biological agents in wartime and natural disaster contingencies.</p> 
       <h4>Basic Requirements</h4>
@@ -490,11 +518,13 @@ const data =[
         <li>Sasebo and Yokosuka, Japan </li> 
         <li>Sigonella, Italy</li> 
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:douglas.e.putthoff.mil@mail.mil" target="_system">CAPT Douglas Putthoff</a></p>
     `
   },
   {
     id:17,
-    title:'Manpower Systems Analysis Management',
+    title:'Manpower Systems Analysis Management (3130)',
     content:`
       <p>Manpower and Personnel Analysts are Health Care Administrators who attain the requisite knowledge, skills, and abilities through formal education, training, or experience to lead Navy Medicine manpower, personnel, and human resources initiatives.</p>
       <p><strong>"Manpower"</strong> refers to the billets required to perform a task or function. Manpower analysts determine the number of billets required, authorized, and available to operate, maintain, support, and provide training in meeting Navy Medicine's mission. Manpower requirements (Spaces) are based on the range of operations during peacetime, low intensity conflict, and wartime. </p>
@@ -518,11 +548,13 @@ const data =[
       <p>Typically, payback tours are 3-years for NPS and Fellowship, but review the annual BUMEDNOTE for specifics.</p>
       <h4>WHAT/WHERE ARE THE TYPICAL UTILIZATION TOURS?</h4> 
       <p>Most utilization tours will be completed at the Bureau of Medicine and Surgery, Falls Church, VA or one of its detachments. As needed, some utilization tours may be completed at Military Treatment Facilities (MTF) primarily as the Department Head for Human Resources. After completion of the initial utilization tour, Manpower and Personnel Analysts often pursue out-of-specialty tours (operational, MTF, or milestone billets). Due to high demand, we generally have 30-40% of our community working in out-of-specialty tours (CO, XO, DFA, OIC, etc.).</p>
-    `
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:raymond.bristol@navy.mil" target="_system">CDR Raymond Bristol</a></p>
+      `
   },
   {
     id:18,
-    title:'Medical Logistics Administration',
+    title:'Medical Logistics Administration (1802,3121)',
     content:`
       <h4>Who we are</h4>
       <p>The Medical Logistics community stems from the service of Medical Department Officers as Medical Materiel Managers at the United States Naval Medical Supply Depot in 1850. In World War II, Medical Materiel Supply functions were performed by Hospital Corps Warrant Officers. The establishment of the Medical Service Corps in 1947 ensured experience gained during the war was retained with Supply and Administration as one of the four subspecialties.</p> 
@@ -538,11 +570,13 @@ const data =[
         <li>Earn the Certified Defense Financial Manager (CDFM)  </li>
         <li>Achieve Defense Acquisition Workforce Improvement Act (DAWIA) certification in Life Cycle Logistics</li> 
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:Janine.e.espinal.mil@mail.mil" target="_system">LCDR Janine Espinal</a></p>
     `
   },
   {
     id:19,
-    title:'Medical Technology',
+    title:'Medical Technology (1865)',
     content:`
       <p>Navy Medical Technologists serve as managers and supervisors of state-of-the art clinical laboratories and blood Banks in Navy Hospitals in the United States and many foreign countries. They are integral members of the health care team.</p> 
       <h4>Basic Requirements</h4>
@@ -572,11 +606,13 @@ const data =[
         <li>Sigonella, Italy </li>
         <li>Rota, Spain</li>
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:todd.j.tetreault.mil@mail.mil" target="_system">CDR Todd Tetreault</a></p>
     `
   },
   {
     id:20,
-    title:'Microbiology',
+    title:'Microbiology (1815/16/17/19/21)',
     content:`
       <p>Navy Microbiologists currently serve in 20 locations performing a wide range of interesting duties, including: Research and Development (both medical and non-medical) overseas in Egypt, Peru, Cambodia, and Singapore; within the Continental U.S (Washington DC metro area, Norfolk VA, San Diego CA); Environmental Preventive Medicine in Pearl Harbor, HI, Norfolk VA, and San Diego, CA; and Clinical Microbiology at our three large teaching medical centers in Bethesda MD, Portsmouth VA, and San Diego CA. Our primary focus is on the prevention, detection, diagnosis and/or treatment of infectious disease threats to our armed forces.</p> 
       <h4>Basic Requirements</h4>
@@ -605,11 +641,13 @@ const data =[
         <li>Lima, Peru </li>
         <li>Pearl Harbor, Hawaii</li>
       </ul> 
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:matthew.a.weiner.mil@mail.mil" target="_system">CDR Matthew Weiner</a></p>
     `
   },
   {
     id:21,
-    title:'Occupational Therapy',
+    title:'Occupational Therapy (1874)',
     content:`
       <p>Navy Occupational Therapists practice in a wide variety of clinical settings throughout the U.S. and Japan. The primary clinical practices areas include: neuromusculoskeletal screenings for the upper extremity as physician extenders; upper extremity and hand rehabilitation; acute inpatient rehabilitation; pediatric/school based therapy; ergonomic and injury prevention; lymph edema management; mild traumatic brain injury; and in the behavioral health arenas of post-traumatic stress disorders and substance abuse. There has been considerable growth in the clinical practice arena of mild traumatic brain injury which focuses on vision therapy, driving simulation, and return to duty/community transitional care. Navy Occupational Therapists currently serve in the combat environment in Afghanistan.</p> 
       <h4>Basic Requirements</h4>
@@ -640,11 +678,13 @@ const data =[
         <li>Iwakuni and Sasebo, Japan </li>
         <li>Guam, Mariana Island</li>
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:leah.y.geislinger.mil@mail.mil" target="_system">CDR Leah Geislinger</a></p>
     `
   },
   {
     id:22,
-    title:'Operations Research and Analysis',
+    title:'Operations Research and Analysis (3211)',
     content:`
       <h4>WHO WE ARE</h4> 
       <p>The Operations Research (OR) community is a sub-specialty of Healthcare Administration that is composed of a small community of research analysts versed in the use of (OR), Engineering, and 
@@ -658,12 +698,17 @@ const data =[
       been met and whether or not a mathematics refresher course is recommended. Joint Professional Military Education Phase I is also taught and may be completed during the curriculum. 
       Learn more about NPS and the curriculum for Operations Analysis (Curriculum 360) <a href="http://www.nps.edu/Academics/Schools/GSOIS/Departments/OR/index.html">Here</a>.</p>
       <h4>WHAT IS MY PAYBACK?</h4> 
-      <p>Typically 3-year maximum for NPS, but see the annual BUMED note for specifics. WHERE CAN I EXPECT TO DO MY PAYBACK? A typical payback tour will be at the BUMED in Fals Church, VA, but other locations include: Health Research Center, San Diego and Navy Medical Information Center, Norfolk, VA.. While these are the primary billets to be filled, consideration is also given to other analyst opportunities in locations such as Office of the Chief of Naval Operations/N81, and the Center for Naval Analysis.</p>
+      <p>Typically 3-year maximum for NPS, but see the annual BUMED note for specifics. WHERE CAN I EXPECT TO DO MY PAYBACK? A typical payback tour will be at 
+      the BUMED in Fals Church, VA, but other locations include: Health Research Center, San Diego and Navy Medical Information Center, Norfolk, VA.. While 
+      these are the primary billets to be filled, consideration is also given to other analyst opportunities in locations such as Office of the Chief of Naval 
+      Operations/N81, and the Center for Naval Analysis.</p>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:kevin.p.mcmullen.mil@mail.mil" target="_system">LCDR Patrick McMullen</a></p>
     `
   },
   {
     id:23,
-    title:'Optometry',
+    title:'Optometry (1880)',
     content:`
       <p>Navy Optometrists are stationed at military treatment facilities worldwide, providing comprehensive ocular examinations, including evaluation of ocular health and the prescription of glasses and contact lenses.</p> 
       <h4>Basic Requirements</h4>
@@ -692,11 +737,13 @@ const data =[
         <li>Pearl Harbor, Hawaii </li>
         <li>Guam, Mariana Island</li>
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:kevin.j.mcgowan4.mil@mail.mil" target="_system">CAPT Kevin McGowan</a></p>
     `
   },
   {
     id:24,
-    title:'Patient Administration',
+    title:'Patient Administration (1801)',
     content:`
       <h4>COMMUNITY OVERVIEW:</h4>
       <p>Patient Administration (PAD) is a subspecialty of Health Care Administration (HCA) in the Medical Service Corps. Patient Administrators serve at Military Treatment Facilities (MTF), aboard Navy Vessels, on deployable platforms such as Expeditionary Medical Facilities, in Joint Services environments, and at Headquarters commands. PAD is the only HCA subspecialty that directly interacts with patients and medical providers daily. They provide and coordinate a wide variety of administrative functions in support of essential DoD programs as they relate to health care operations, medical readiness and the care of Wounded, Ill and Injured Service Members. Often referred to as a cradle to grave business, PAD duties and responsibilities are essential in ensuring delivery of health care benefits, continuity of care, achieving a medically ready force, protection and safety of individual health information, and dignified and compassionate treatment from birth registration to decedent affairs. In PAD, every day is an adventure!</p> 
@@ -751,11 +798,13 @@ const data =[
         <li>Medical Regulating Course (MEDREG) and Patient Movement – A two-day course that provides knowledge, skills, concepts and principles of medical regulating, patient movement operations, Health Service Support assets, planning, and communications unique to the Navy and Marine Corps, as well as the joint operating arena. Graduates are assigned to Fleet Surgical Teams, Navy and Marine Corps Medical Units serving afloat or overseas. (Incorporated into the PAC but can be attended independently.) </li>
         <li>TRICARE Fundamentals Course – A three-day classroom course that provides an intense, in-depth review of the TRICARE benefit for Military Health System (MHS) staff with less than three years of TRICARE experience. Offered by the TRICARE University.</li>
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:maria.c.coon.mil@mail.mil" target="_system">LCDR Maria Coon</a></p>
     `
   },
   {
     id:25,
-    title:'Pharmacy',
+    title:'Pharmacy (1887/88)',
     content:`
       <p>Navy Pharmacists practice pharmaceutical care in a wide variety of hospitals and clinics, ranging from large teaching hospitals and small clinics to serving on a 1,000- bed hospital ship, when it's deployed. Pharmacists can get experience in drug information services, drug use evaluations, sterile products, unit dose distribution, interventions, patient counseling, administration and much more.</p> 
       <h4>Basic Requirements</h4>
@@ -779,11 +828,13 @@ const data =[
       <ul>
         <li>Bethesda, Maryland San Diego, California Portsmouth, Virginia Rota, Spain Pearl Harbor, Hawaii Guam, Mariana Island</li>
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:thinh.v.ha.mil@mail.mil" target="_system">CAPT Thinh Ha</a></p>
     `
   },
   {
     id:26,
-    title:'Physical Therapy',
+    title:'Physical Therapy (1873)',
     content:`
       <p>Primary duties for Navy Physical Therapists include the practice of comprehensive orthopedics for Sailors and Marines in a wide variety of settings. Practice settings include Naval Hospitals and clinics in the U.S. and overseas, aircraft carriers and Navy and Marine Corps Special Operations Units.</p> 
       <h4>Basic Requirements</h4>
@@ -815,6 +866,8 @@ const data =[
         <li>Sigonella, Italy </li>
         <li>Bremerton, Washington</li>
       </ul> 
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:fredrik.d.schmitz.mil@mail.mil" target="_system">CAPT Fred Schmitz</a></p>
     `
   },
   {
@@ -846,7 +899,7 @@ const data =[
   },
   {
     id:28,
-    title:'Physician Assistant',
+    title:'Physician Assistant (1893)',
     content:`
       <p>Navy Physician Assistants, while practicing medicine under the guidelines of a supervising physician, work as an integral part of the Navy's health care delivery team. Physician Assistants utilize their skills, knowledge and experience to obtain complete medical histories, perform comprehensive exams, order and initially interpret diagnostic laboratory and X-ray studies, plan and initiate thorough treatment regimens encountered in all areas of primary care medicine.</p> 
       <h4>Basic Requirements</h4>
@@ -874,11 +927,13 @@ const data =[
         <li>Kaneohe Bay, Hawaii </li>
         <li>Yokosuka and Okinawa, Japan</li>
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:Edward.h.owens.mil@mail.mil" target="_system">CDR Edward Owens</a></p>
     `
   },
   {
     id:29,
-    title:'Physiology',
+    title:'Physiology (1835)',
     content:`
       <p>Navy Physiologists apply innovative technologies in physiology and medicine to perform basic and applied research associated with the physiological challenges facing the Navy and Marine Corps Personnel. These areas include but are not limited to the stresses associated with military environments (e.g., temperature, altitude, pressure, and acceleration) in both human and animal models. As vital members of research and development teams, Navy Physiologists design, conduct, and manage research projects, as well as educate and train medical personnel.</h4>
       <ul>
@@ -908,11 +963,13 @@ const data =[
         <li>Groton, Connecticut </li>
         <li>Arlington, Virginia</li>
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:christopher.t.steele3.mil@mail.mil" target="_system">LCDR Christopher Steele</a></p>
     `
   },
   {
     id:30,
-    title:'Podiatry',
+    title:'Podiatry (1892)',
     content:`
       <p>Naval Podiatrists are members of the medical team dedicated to maintaining operational readiness of our fighting forces, as well as treating service members and families. Podiatrists in the U.S. Navy can practice within the full medical and surgical scopes of the profession and are afforded treatment opportunities at their respective treatment facilities.</p> 
       <h4>Basic Requirements</h4>
@@ -944,11 +1001,13 @@ const data =[
         <li>Sigonella, Italy </li>
         <li>Okinawa, Japan</li>
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:ian.t.mcguinness2.mil@mail.mil" target="_system">LCDR Ian McGuinness</a></p>
     `
   },
   {
     id:31,
-    title:'Radiation Health',
+    title:'Radiation Health (1825)',
     content:`
       <p>Navy Radiation Health Officers (RHOs) serve in a variety of roles involving the safe use of radiation producing equipment and radioactive materials. Career progress requires increasing levels of responsibility and leadership in the management of a radiation protection programs, basic/applied research, clinical medical physics and industrial/environmental oversight.</p> 
       <h4>Basic Requirements</h4>
@@ -978,6 +1037,8 @@ const data =[
         <li>Yokosuka, Japan </li>
         <li>Pearl Harbor, Hawaii</li>
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:anthony.s.williams26.mil@mail.mil" target="_system">CAPT Anthony Williams</a></p>
     `
   },
   {
@@ -1009,11 +1070,13 @@ const data =[
         <li>Arlington, Virginia </li>
         <li>San Diego, California</li>
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:john.l.melton@navy.mil" target="_system">CDR John Melton</a></p>
     `
   },
   {
     id:33,
-    title:'Social Work',
+    title:'Social Work (1870)',
     content:`
       <p>Navy Social Workers work within both Medical Treatment Facilities (MTF) and Fleet and Family Support Centers (FFSC). The focus of Social Work within an MTF varies between medical surgical, counseling services and the administrative duties of managing a department. Social Work practice within an FFSC is strictly providing behavioral health related services. All Navy active duty Social Workers are licensed independent providers and must be privileged in accordance with CNIC and BUMED policy.</p> 
       <h4>Basic Requirements</h4>
@@ -1033,6 +1096,8 @@ const data =[
       <ul>
         <li>Pursue advanced education in post-master's clinical fellowships.</li>
       </ul>
+      <h4>Specialty Leader</h4>
+      <p><a href="mailto:Danyell.brenner@fe.navy.mil" target="_system">LCDR Danyell Brenner</a></p>
     `
   },
   {
