@@ -55,12 +55,62 @@ class Detailing extends React.Component<Props, State>{
   componentWillMount(){
     this.props.setPageTitle("Detailing");
   }
+  // putting this here in case it is necessary to add it back in.
+  detailingContainer(){
+    return (
+      <DetailingContainer />
+    )
+  }
 
   render(){
     return ( 
       <div>
         <AppTitleBar title="Detailing" />
-        <DetailingContainer />
+        <div style={{backgroundColor:"#fff",width:'100%',padding:'50px 20px 10px'}}>
+          <h3>Key Contacts</h3>
+          <div>
+            <h4>Community Management</h4>
+            <div>
+              <p>
+                MSC Community Manager <br />
+                <b>CDR Raymond Bristol</b> <br />
+                BUPERS, Millington, TN <br />
+                901-874-2370  DSN 882 <br />
+                Email: <a href="mailto:Raymond.bristol@navy.mil" target="_system">Raymond.bristol@navy.mil</a>
+              </p>
+            </div>
+          </div>
+          <div>
+            <h4>Officer Assignment and Placement</h4>
+            <div>
+              <p>
+                <b>MSC Detailers</b> <br />
+                PERS-4415, Millington, TN <br />
+              </p>
+            </div>
+            <div>
+              <p>
+                Head/HCCS:  <b>CAPT Jody Dreyer</b> <br />
+                901-874-3756  DSN: 882 <br />
+                Email: <a href="">jody.dreyer@navy.mil</a>
+              </p>
+            </div>
+            <div>
+              <p>
+                HCA: <b>CDR Rona Green</b>
+                901-874-4120 DSN: 882 <br />
+                Email: <a href="">rona.green@navy.mil</a> 
+              </p>
+            </div>
+            <div>
+              <p>
+                HCS: <b>LCDR Chuck Wilhite</b> <br />
+                901-874-4115  DSN 882 <br />
+                Email: <a href="">charles.wilhite@navy.mil</a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
