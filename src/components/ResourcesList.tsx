@@ -36,6 +36,8 @@ import * as React from 'react';
 import {ResourcesInterface} from '../res/data/resources';
 import ResourcesItem from './ResourcesItem';
 import {List} from 'material-ui/List';
+import {getPDF} from '../actions/_helper';
+import {ListItem} from 'material-ui/List';
 
 export interface Props {
   resources: ResourcesInterface[];
@@ -50,12 +52,18 @@ export default class ResourcessList extends React.Component<Props, State>{
   }
   render(){
     const {resources} = this.props;
+    const listStyle = {
+      margin: 10,
+      border: '1px groove #FBF8F8',
+      padding : "10px 5px"
+    }
     return (
       <div style={{backgroundColor:"#fff", paddingTop:50}}>
         <List>
           {resources.map(resource => {
             return <ResourcesItem key={resource.id} resources={resource} />
           })}
+          <ListItem primaryText={'MSC Corps Chief Office'} style={listStyle} onTouchTap={()=> getPDF(require('../res/files/corpschief.pdf'))}/>
         </List>
       </div>
     );
